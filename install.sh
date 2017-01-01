@@ -21,6 +21,7 @@ echo "
 [Unit]
 Description=\"Cinder Docker Plugin daemon\"
 Before=docker.service
+After=network.target
 Requires=cinder-docker-driver.service
 
 [Service]
